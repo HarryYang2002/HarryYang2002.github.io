@@ -1,207 +1,320 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>HarryYang</title><meta name="author" content="HarryYang"><meta name="copyright" content="HarryYang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="HarryYang">
+<meta property="og:url" content="https://harryyang2002.github.io/index.html">
+<meta property="og:site_name" content="HarryYang">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="HarryYang">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://harryyang2002.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HarryYang',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-09-02 00:06:35'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.2.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/09/01/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-09-01T14:55:52.302Z" itemprop="datePublished">2022-09-01</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/09/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/01/hello-world/" data-id="cl7j70k7f0000ocqqe1dreojb" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">HarryYang</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">HarryYang</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%85%AB%EF%BC%89%E5%8C%85%E5%92%8C%E5%B0%81%E8%A3%85/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%85%AB%EF%BC%89%E5%8C%85%E5%92%8C%E5%B0%81%E8%A3%85/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-01T16:06:19.993Z" title="发表于 2022-09-02 00:06:19">2022-09-02</time></span></div><div class="content">可以看这篇Go语言的包和封装
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%B8%83%EF%BC%89%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%B8%83%EF%BC%89%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-01T16:05:59.188Z" title="发表于 2022-09-02 00:05:59">2022-09-02</time></span></div><div class="content">看这篇Go语言的依赖管理
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%85%AD%EF%BC%89%E7%BB%93%E6%9E%84%E4%BD%93/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%85%AD%EF%BC%89%E7%BB%93%E6%9E%84%E4%BD%93/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-01T16:05:33.897Z" title="发表于 2022-09-02 00:05:33">2022-09-02</time></span></div><div class="content">一.结构体
+结构体解释:将一个或多个变量组合到一起,形成新的类型.这个类型就是结构体
+Go语言中的结构体和C++结构体有点类似,而Java或C#中类本质就是结构体
+结构体是值类型
+结构体定义语法
+通过语法可以看出,Go语言发明者明确认为结构体就是一种自定义类型
 
 
 
-  
+123type 结构体名称 struct&#123;  名称 类型//成员或属性&#125;
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/09/01/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
+二. 代码示例
+定义结构体
+结构体可以定义在函数内部或函数外部(与普通变量一样),定义位置影响到结构体的访问范围
+如果结构体定义在函数外面,结构体名称首字母是否大写影响到结构体是否能跨包访问
+如果结构体能跨包访问,属性首字母是否大写影响到属性是否跨包访问
 
 
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+1234type People struct &#123;	Name string	Age  int&#125;
+
+
+声明结构体变量
+由于结构体是值类型,所以声明后就会开辟内存空间
+所有成员为类型对应的初始值
 
 
 
+123var peo Peoplefmt.Print(peo)//输出:&#123;0 &#125;fmt.Printf(&quot;%p&quot;,&a ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%BA%94%EF%BC%89%E5%AD%97%E7%AC%A6/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%BA%94%EF%BC%89%E5%AD%97%E7%AC%A6/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-01T16:05:03.920Z" title="发表于 2022-09-02 00:05:03">2022-09-02</time></span></div><div class="content">一.字符串概述
+字符串是一段不可变的字符序列.内容是任意内容,可以是一段文字也可以是一串数字,但是字符串类型数字不能进行数学运算,必须转换成整型或浮点型
+字符串类型关键字:string
+创建字符串类型变量
 
-<script src="/js/script.js"></script>
+12var s string = &quot;smallming&quot;s1 := &quot;smallming&quot;
+
+
+字符串类型的值使用双引号””扩上,内容支持转义字符串.两侧使用反单引号时原格式输出
+
+123456func main() &#123;	a := &quot;a\tbc&quot;	b := `a\tbc`	fmt.Println(a) //输出:a	abc	fmt.Println(b) //输出a\tabc&#125;
+
+
+二.字符串和数值转换
+包strconv提供了字符串和其他类型相互转换的函数,下面以字符串和数值类型转换为例
+int和string相互转换
+
+1234567891011121314151617181920212223package mainimport (	&quot;fmt&quot;	&quot;strconv&quot;) ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%9B%9B%EF%BC%89map/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%9B%9B%EF%BC%89map/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-01T16:04:30.993Z" title="发表于 2022-09-02 00:04:30">2022-09-02</time></span></div><div class="content">一. map
+map以散列表方式存储键值对集合
+
+map中每个元素都是键值对
+
+
+1map[key]Value
+
+
+key是操作map的唯一标准.可以通过key对map中元素进行增加&#x2F;删除&#x2F;修改&#x2F;查看
+key是唯一的,添加重复的key会覆盖之前的元素.
+map是值类型,只声明时为空指针(nil)
+
+123var m map[string]intfmt.Println(m == nil) //输出:truefmt.Printf(&quot;%p&quot;, m)   //输出:0x0
+
+
+map读写数据时并不是并发安全的,可以结合RWMutex保证并发安全(RWMutex在后面讲解)
+
+二.实例化map的几种方式
+使用make函数实例化一个没有初始值的map
+
+123m := make(map[string]string)fmt.Println(m==nil)//输出:falsefmt.Printf(&quot;%p&quot;, m)//输出:内存地址
+
+
+可以在声明map时直接给map赋初始值.注意初始值在一行和在多行写时的语法区别
+map中元素键值对 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%B8%89%EF%BC%89%E5%88%87%E7%89%87/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%B8%89%EF%BC%89%E5%88%87%E7%89%87/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-01T16:03:51.702Z" title="发表于 2022-09-02 00:03:51">2022-09-02</time></span></div><div class="content">一.切片
+切片的英文名称slice
+切片:具有可变长度相同类型元素序列.
+由于长度是可变,可以解决数组长度在数据个数不确定情况下浪费内存的问题.
+切片和数组声明时语法最主要的区别就是长度
+
+12var slice []string  //切片var array [3]string //数组
+
+
+切片只声明时为nil,没有开辟内存空间,不能直接操作切片,需要先初始化
+注意:切片只能和nil进行判断是否相等
 
 
 
+123var slice []string  //切片fmt.Println(slice==nil)//输出:truefmt.Printf(&quot;%p&quot;,slice)//输出:0x0
+
+二.定义切片
+通过直接指定初始值定初始化一个切片变量
+
+12names := []string&#123;&quot;smallming&quot;, &quot;佳明哥&quot;&#125;fmt.Println(names)
 
 
-  </div>
-</body>
-</html>
+定义完切片后就可以通过切片对象[脚标]取出或修改切片中元素内容.语法和数组相同
+
+三.切片是引用类型
+引用类型在变量之间赋值时传递的是地址.引用类型 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%E5%BE%AA%E7%8E%AF/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89%E5%BE%AA%E7%8E%AF/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-01T16:03:06.118Z" title="发表于 2022-09-02 00:03:06">2022-09-02</time></span></div><div class="content">一.for循环
+循环:让程序多次执行相同的代码块
+for循环是Go语言中唯一一个循环结构
+for循环经典语法
+先执行表达式1
+执行表达式判断是否成立,如果成立执行循环体
+循环体执行完成后,执行表达式3
+再次执行表达式2,判断是否成立.
+
+
+
+123for 表达式1;表达式2;表达式3&#123;  //循环体&#125;
+
+
+for循环用的最多的地方就是遍历数组或切片等
+
+二.代码示例
+经典for循环结构中 , for关键字后面有三个表达式,且每个表达式都可以省略
+
+123456789for i := 0; i &lt; 5; i++ &#123;	fmt.Println(i)&#125;//等价于j := 0for ; j &lt; 5; &#123;	fmt.Println(j)	j++&#125;
+
+
+for关键字后面也可以只有一个表达式,表示如果条件成立执行循环体代码
+
+123456789for i := 0; i &lt; 5; i++ &#123;	fmt.Println(i)&#125;//等价于j := 0for j &lt; 5 &#123;	fmt.Println( ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%E6%95%B0%E7%BB%84/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89%E6%95%B0%E7%BB%84/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-01T16:02:37.500Z" title="发表于 2022-09-02 00:02:37">2022-09-02</time></span></div><div class="content">一.数组介绍
+数组:具有固定长度相同类型元素序列
+声明数组的语法
+
+123//var 对象名 [长度]元素类型var arr [5]intfmt.Println(arr) //输出:[0 0 0 0 0]
+
+
+数组就是内存中一段固定长度的连续空间.
+声明数组后数组就会在内存中开辟一块连续空间,每个值称为数组的元素,且元素值为类型对应的默认值.例如int类型默认值为0,string类型默认值为空字符串
+数组中每个元素按照顺序都有自己整数类型的脚标,脚标从第一个元素为0向后依次加1[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-TqaLWJk4-1661413255607)(images&#x2F;05_03_array.png)]
+数组中实际开发中主要作用是充当临时容器,因为声明一个数组变量比声明多个相同类型变量在操作时更加方便
+
+二.数组的创建和赋值
+可以在声明数组时可以同时给数组赋值,赋值时要求长度必须大于等于初始值个数
+
+12345678//方式一:完整写法var arr [3]int = [3]int&#123;1, 2, 3&#125;//方式二: ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%EF%BC%89%E6%8C%87%E9%92%88/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%EF%BC%89%E6%8C%87%E9%92%88/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-01T16:01:16.162Z" title="发表于 2022-09-02 00:01:16">2022-09-02</time></span></div><div class="content">一.变量地址
+变量本质就是内存中一块数据的标记.把值存储到变量中实质是把值存储到内存中
+每次对变量重新赋值就是在修改变量地址中的内容
+在Go语言中可以通过 &amp;+变量名 获取到变量地址值
+重新创建一个非引用型变量(即使是把已有变量直接赋值给新变量)也会新开辟内存地址.
+
+1234567891011func main() &#123;	a := 3	fmt.Println(&amp;a) //输出:地址	a = 4	fmt.Println(&amp;a) //输出的地址不变	b := a	b = 5	fmt.Println(&amp;b, &amp;a) //两个值不相同	fmt.Println(b, a)   //输出:5 4&#125;
+
+二.指针变量
+指针变量指向一个值的内存地址
+使用&amp;+变量 返回值就是一个指针类型
+使用var 变量名 *类型 声明指针类型变量
+声明指针不会开辟内存地址,只是准备要指向内存某个空间,而声明变量会开辟内存地址,准备存放内容.所以指针类型变量都是把一个变量的地址赋值给指针变量
+使用*+指针能够获取内存地址中的值.所以*+指针就和直接使用变 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B9%9D%EF%BC%89%E5%87%BD%E6%95%B0/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B9%9D%EF%BC%89%E5%87%BD%E6%95%B0/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-01T16:00:46.193Z" title="发表于 2022-09-02 00:00:46">2022-09-02</time></span></div><div class="content">一. 函数
+函数:一段代码块
+所有的流程控制代码和业务代码都只能写在函数内部
+为什么使用函数:
+把一个功能提出作为一个函数便于后期维护,结构清晰
+
+
+函数声明的语法
+函数声明后不会执行,必须调用后才会执行
+
+
+
+123func 函数名(参数列表) 返回值&#123;  //函数体&#125;
+
+
+函数调用的语法
+
+1返回值:=函数名(参数)
+
+
+二. 无参数无返回值函数
+函数可以有参数也可以没有参数,可以有返回值也可以没有返回值
+
+1234567891011func main() &#123;	demo1()&#125;func demo1()&#123;	fmt.Println(&quot;执行demo1函数&quot;)&#125;//上面代码等同于//func main()&#123;//	fmt.Println(&quot;执行demo1函数&quot;)//&#125;
+
+三.有参数函数
+函数的参数可以有多个,且每个参数类型都可以不同
+参数表示调用函数方想要给函数内部传递的值,给函数使用的.
+声明函数时的参数叫做形参数,调用函数时参数叫做实参
+
+12345678func ma ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">HarryYang</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%85%AB%EF%BC%89%E5%8C%85%E5%92%8C%E5%B0%81%E8%A3%85/" title="无题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%85%AB%EF%BC%89%E5%8C%85%E5%92%8C%E5%B0%81%E8%A3%85/" title="无题">无题</a><time datetime="2022-09-01T16:06:19.993Z" title="发表于 2022-09-02 00:06:19">2022-09-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%B8%83%EF%BC%89%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/" title="无题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%B8%83%EF%BC%89%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86/" title="无题">无题</a><time datetime="2022-09-01T16:05:59.188Z" title="发表于 2022-09-02 00:05:59">2022-09-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%85%AD%EF%BC%89%E7%BB%93%E6%9E%84%E4%BD%93/" title="无题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%85%AD%EF%BC%89%E7%BB%93%E6%9E%84%E4%BD%93/" title="无题">无题</a><time datetime="2022-09-01T16:05:33.897Z" title="发表于 2022-09-02 00:05:33">2022-09-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%BA%94%EF%BC%89%E5%AD%97%E7%AC%A6/" title="无题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E4%BA%94%EF%BC%89%E5%AD%97%E7%AC%A6/" title="无题">无题</a><time datetime="2022-09-01T16:05:03.920Z" title="发表于 2022-09-02 00:05:03">2022-09-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%9B%9B%EF%BC%89map/" title="无题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/09/02/Go%E5%9F%BA%E7%A1%80%EF%BC%88%E5%8D%81%E5%9B%9B%EF%BC%89map/" title="无题">无题</a><time datetime="2022-09-01T16:04:30.993Z" title="发表于 2022-09-02 00:04:30">2022-09-02</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">18</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">18</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-09-01T16:06:35.734Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By HarryYang</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
